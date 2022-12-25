@@ -97,8 +97,26 @@ public class Main {
     }
     public static void task7() {
         System.out.println("Задача 7");
+        int commonWeit =7000;
+        int minEffectiveness =250;
+        int maxEffectiveness =500;
+        int numberDays =commonWeit/minEffectiveness;
+        System.out.println("Спортсмен сможет сбросить "+commonWeit/1000+" кг за "+numberDays+" дней худея по 250 грамм");
+        numberDays =commonWeit/maxEffectiveness;
+        System.out.println("Спортсмен сможет сбросить "+commonWeit/1000+" кг за "+numberDays+" дней худея по 500 грамм");
+        numberDays =(commonWeit/maxEffectiveness+commonWeit/minEffectiveness)/2;
+        System.out.println("В среднем потребуется "+numberDays+" дней");
     }
     public static void task8() {
         System.out.println("Задача 8");
+        float salaryMasha =67760f;
+        float salaryDenis =83690f;
+        float salaryKristina =76230f;
+        float increase = 0.1f*salaryMasha;
+        System.out.println("Маша теперь получает "+salaryMasha*1.1f+" рублей. Годовой доход вырос на "+12*increase+" рублей");
+        increase = 0.1f*salaryDenis;
+        System.out.println("Денис теперь получает "+salaryDenis*1.1f+" рублей. Годовой доход вырос на "+12*increase+" рублей");
+        increase = 0.1f*salaryKristina;
+        System.out.println("Кристина теперь получает "+salaryKristina*1.1f+" рублей. Годовой доход вырос на "+12*increase+" рублей");
     }
 }
