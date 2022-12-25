@@ -73,9 +73,27 @@ public class Main {
     }
     public static void task5() {
         System.out.println("Задача 5");
+        int consumptionWhiteColour =2;
+        int consumptionBrownColour =4;
+        int commonQuantity =120;
+        int numberRooms = commonQuantity/(consumptionWhiteColour+consumptionBrownColour);
+        consumptionWhiteColour =consumptionWhiteColour*numberRooms ;
+        consumptionBrownColour =consumptionBrownColour*numberRooms ;
+        System.out.println("В школе, где "+numberRooms+" классов, для ремонта нужно");
+        System.out.println(consumptionWhiteColour+" банок белой и "+consumptionBrownColour+" банок коричневой краски");
     }
     public static void task6() {
         System.out.println("Задача 6");
+        int numberBananas =5;
+        int weitBananas =80;
+        int numberMilk =2;
+        int weitMilk =105;
+        int numberIceCream =2;
+        int weitIceCream =100;
+        int numberEgg =4;
+        int weitEgg =70;
+        float commonWeit =numberBananas*weitBananas+numberMilk*weitMilk+numberIceCream*weitIceCream+numberEgg*weitEgg;
+        System.out.println("Общий вес завтрака составляет "+commonWeit+" грамм, или "+commonWeit/1000+" килограмм");
     }
     public static void task7() {
         System.out.println("Задача 7");
